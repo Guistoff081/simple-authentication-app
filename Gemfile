@@ -13,6 +13,8 @@ gem "stimulus-rails"
 gem "cssbundling-rails"
 gem "jbuilder"
 gem "bcrypt", "~> 3.1.7"
+gem "devise"
+gem "carrierwave", "~> 3.0"
 
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
@@ -20,6 +22,8 @@ gem "bootsnap", require: false
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "rspec-rails"
+  gem "faker"
+  gem "factory_bot_rails"
 end
 
 group :development do
@@ -32,4 +36,5 @@ group :development do
   gem "rubocop-rspec", require: false
   gem "rubycritic", require: false
 end
+
 

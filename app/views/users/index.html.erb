@@ -1,0 +1,13 @@
+<div>
+  <div>
+    <ul role="list" class="divide-y divide-gray-100" id='users'>
+      <% @users.each do |user| %>
+        <%= render user %>
+      <% end %>
+    </ul>
+  </div>
+
+  <div>
+    <%= link_to "New user", new_user_path %>
+  </div>
+</div>

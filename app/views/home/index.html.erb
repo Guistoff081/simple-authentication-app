@@ -16,6 +16,9 @@
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
+        <% if current_user.present? %>
+          <%= link_to 'Users', users_path, class: "text-sm font-semibold leading-6 text-gray-900" %>
+        <% end %>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="<%= new_user_registration_path %>" class="text-sm font-semibold leading-6 text-gray-900 mr-2">Sign up <span aria-hidden="true">&uarr;</span></a>
